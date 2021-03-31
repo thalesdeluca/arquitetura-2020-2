@@ -20,6 +20,6 @@ public enum GroundTexture {
   }
 
   public static GroundTexture castFromInt(final int id) {
-    return map.getOrDefault(id, CLAYISH);
+    return map.get(id);
   }
 }

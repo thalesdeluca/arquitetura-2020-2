@@ -20,6 +20,6 @@ public enum CultivationSystem {
   }
 
   public static CultivationSystem castFromInt(final int id) {
-    return map.getOrDefault(id, DIRECT_PLANT);
+    return map.get(id);
   }
 }

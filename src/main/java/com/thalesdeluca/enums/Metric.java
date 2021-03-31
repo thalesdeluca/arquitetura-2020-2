@@ -19,6 +19,6 @@ public enum Metric {
   }
 
   public static Metric castFromInt(final int id) {
-    return map.getOrDefault(id, MGDM);
+    return map.get(id);
   }
 }
