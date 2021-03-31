@@ -1,0 +1,11 @@
+com/thalesdeluca/app/enums/CultivationSystem.class
+com/thalesdeluca/app/content/AluminiumContent.class
+com/thalesdeluca/app/content/CalciumContent.class
+com/thalesdeluca/app/content/Content.class
+com/thalesdeluca/app/content/PhosphorContent.class
+com/thalesdeluca/app/content/MagnesiumContent.class
+com/thalesdeluca/app/enums/Metric.class
+com/thalesdeluca/app/enums/GroundTexture.class
+com/thalesdeluca/app/content/PotassiumContent.class
+com/thalesdeluca/app/App.class
+com/thalesdeluca/app/content/SulfurContent.class

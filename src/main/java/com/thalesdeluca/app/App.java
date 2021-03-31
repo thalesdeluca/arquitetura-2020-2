@@ -1,13 +1,9 @@
 package com.thalesdeluca.app;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.thalesdeluca.enums.*;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println(CultivationSystem.CONVENTIONAL.getValue());
     }
 }
