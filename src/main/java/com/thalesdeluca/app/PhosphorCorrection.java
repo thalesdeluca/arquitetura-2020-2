@@ -12,7 +12,7 @@ public class PhosphorCorrection {
   private static final int MAX_RESIDUALS = 2;
 
   public static double getCost(PhosphorSource source, float costTon, float contentDesired, float efficiency,
-      PhosphorContent content) {
+      Content content) {
     double needToAdd = contentDesired - content.getOnGround();
     double baseMgdm = needToAdd < 0.01 ? 0 : needToAdd;
     double kgka = baseMgdm * 2;
