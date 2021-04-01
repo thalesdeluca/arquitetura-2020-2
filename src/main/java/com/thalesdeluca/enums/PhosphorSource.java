@@ -1,11 +1,8 @@
 package com.thalesdeluca.enums;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import com.thalesdeluca.contents.PhosphorContent;
 
 public enum PhosphorSource {
   SIMPLE_SUPERPHOSPHATE(1), TRIPLE_SUPERPHOSPHATE(2), MAP(3), DAP(4), YOORIN_TERMALPHOSPHATE(5),
