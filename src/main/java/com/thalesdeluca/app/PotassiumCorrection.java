@@ -50,7 +50,7 @@ public class PotassiumCorrection {
     return 0;
   }
 
-  public static double getToBeApplied(PotassiumSource source, float efficiency, double potassiumDesired,
+  public static double getToBeApplied(PotassiumSource source, double efficiency, double potassiumDesired,
       Content content) {
     double kToAdd = (content.getOnGround() * (potassiumDesired) / getActualPotassiumSoilCTC(content, potassiumDesired))
         - content.getOnGround();
@@ -65,8 +65,8 @@ public class PotassiumCorrection {
     return kgHectare;
   }
 
-  public static double getCost(PotassiumSource source, float efficiency, double potassiumDesired, Content content,
-      float costTon) {
+  public static double getCost(PotassiumSource source, double efficiency, double potassiumDesired, Content content,
+      double costTon) {
     double kgBushel = getToBeApplied(source, efficiency, potassiumDesired, content) * 2.42;
     return (kgBushel * costTon / 1000.0) / 2.42;
   }

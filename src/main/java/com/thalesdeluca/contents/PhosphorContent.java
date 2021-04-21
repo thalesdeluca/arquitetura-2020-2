@@ -3,18 +3,11 @@ package com.thalesdeluca.contents;
 import com.thalesdeluca.enums.*;
 
 public final class PhosphorContent extends Content {
-  private float efficiency;
-
-  public PhosphorContent(String name, Metric metric, float onGround) {
+  public PhosphorContent(String name, Metric metric, double onGround) {
     super(name, metric, onGround);
   }
 
-  public PhosphorContent(String name, Metric metric, float onGround, float efficiency) {
-    super(name, metric, onGround);
-    this.efficiency = efficiency;
-  }
-
-  public float getIdeal(int groundTexture) {
+  public double getIdeal(int groundTexture) {
     GroundTexture texture = GroundTexture.castFromInt(groundTexture);
 
     if (texture == GroundTexture.CLAYISH) {

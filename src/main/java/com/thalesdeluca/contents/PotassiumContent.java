@@ -3,11 +3,11 @@ package com.thalesdeluca.contents;
 import com.thalesdeluca.enums.*;
 
 public final class PotassiumContent extends Content {
-  public PotassiumContent(String name, Metric metric, float onGround) {
+  public PotassiumContent(String name, Metric metric, double onGround) {
     super(name, metric, onGround);
   }
 
-  public float getIdeal(int groundTexture) {
+  public double getIdeal(int groundTexture) {
     GroundTexture texture = GroundTexture.castFromInt(groundTexture);
 
     if (texture == GroundTexture.CLAYISH) {

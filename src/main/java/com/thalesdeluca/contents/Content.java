@@ -5,23 +5,15 @@ import com.thalesdeluca.enums.*;
 public abstract class Content {
   protected String name;
   protected Metric metric;
-  protected float onGround;
+  protected double onGround;
 
-  public Content(String name, Metric metric, float onGround) {
+  public Content(String name, Metric metric, double onGround) {
     this.name = name;
     this.metric = metric;
     this.onGround = onGround;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public Metric getMetric() {
-    return metric;
-  }
-
-  public float getOnGround() {
+  public double getOnGround() {
     return onGround;
   }
 

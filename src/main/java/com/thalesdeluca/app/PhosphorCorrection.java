@@ -11,7 +11,7 @@ import com.thalesdeluca.enums.*;
 public class PhosphorCorrection {
   private static final int MAX_RESIDUALS = 2;
 
-  public static double getCost(PhosphorSource source, float costTon, float contentDesired, float efficiency,
+  public static double getCost(PhosphorSource source, double costTon, double contentDesired, double efficiency,
       Content content) {
     double needToAdd = contentDesired - content.getOnGround();
     double baseMgdm = needToAdd < 0.01 ? 0 : needToAdd;
@@ -24,7 +24,7 @@ public class PhosphorCorrection {
     return ((costTon * kgBushel) / 2.42) / 1000;
   }
 
-  private static float getSourceContent(PhosphorSource source) {
+  private static double getSourceContent(PhosphorSource source) {
     switch (source) {
     case SIMPLE_SUPERPHOSPHATE:
       return 18;
@@ -66,7 +66,7 @@ public class PhosphorCorrection {
     }
   }
 
-  public static Map<String, Double> getResiduals(PhosphorSource source, float contentDesired, float efficiency,
+  public static Map<String, Double> getResiduals(PhosphorSource source, double contentDesired, double efficiency,
       PhosphorContent content) {
     double[] values = new double[MAX_RESIDUALS];
     String[] keys = new String[MAX_RESIDUALS];

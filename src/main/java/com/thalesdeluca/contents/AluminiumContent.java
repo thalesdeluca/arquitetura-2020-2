@@ -3,11 +3,11 @@ package com.thalesdeluca.contents;
 import com.thalesdeluca.enums.Metric;
 
 public final class AluminiumContent extends Content {
-  public AluminiumContent(String name, Metric metric, float onGround) {
+  public AluminiumContent(String name, Metric metric, double onGround) {
     super(name, metric, onGround);
   }
 
-  public float getIdeal(int groundTexture) {
+  public double getIdeal(int groundTexture) {
     return 0;
   }
 }
